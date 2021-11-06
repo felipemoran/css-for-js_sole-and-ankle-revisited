@@ -16,3 +16,21 @@ export const WEIGHTS = {
   medium: 600,
   bold: 800,
 };
+
+export const BREAKPOINTS_PX = {
+  tabletMin: 600,
+  laptopMin: 950,
+  desktopMin: 1300,
+};
+
+export const BREAKPOINTS_REM = {
+  tabletMin: BREAKPOINTS_PX.tabletMin / 16,
+  laptopMin: BREAKPOINTS_PX.laptopMin / 16,
+  desktopMin: BREAKPOINTS_PX.desktopMin / 16,
+};
+
+export const QUERIES = {
+  phoneAndSmaller: `(max-width: ${BREAKPOINTS_REM.tabletMin}rem)`,
+  tabletAndSmaller: `(max-width: ${BREAKPOINTS_REM.laptopMin}rem)`,
+  laptopAndSmaller: `(max-width: ${BREAKPOINTS_REM.desktopMin}rem)`,
+};
