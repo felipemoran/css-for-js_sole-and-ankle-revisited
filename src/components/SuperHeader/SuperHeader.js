@@ -29,9 +29,7 @@ const Wrapper = styled.div`
   font-size: 0.875rem;
   color: ${COLORS.gray[300]};
   background-color: ${COLORS.gray[900]};
-  height: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 8px 32px;
   
   @media ${QUERIES.tabletAndSmaller} {
       display: none;
