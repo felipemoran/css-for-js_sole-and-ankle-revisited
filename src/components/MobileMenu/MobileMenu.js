@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import {DialogOverlay, DialogContent} from '@reach/dialog';
 
-import {COLORS, QUERIES, WEIGHTS} from '../../constants';
+import {QUERIES, WEIGHTS} from '../../constants';
 
 import UnstyledButton from '../UnstyledButton';
 import Icon from '../Icon';
@@ -43,7 +43,7 @@ const Overlay = styled(DialogOverlay)`
   bottom: 0;
   left: 0;
   right: 0;
-  background: hsl(220 5% 40% / 0.8);
+  background: var(--color-backdrop);
   //height: 100%;
 `
 
@@ -65,7 +65,7 @@ const CloseButton = styled(UnstyledButton)`
     top: 10px;
     right: 16px;
     padding: 16px;
-    color: ${COLORS.gray["900"]};
+    color: var(--color-gray-900);
     
     @media ${QUERIES.phoneAndSmaller} {
       right: 0;
@@ -89,11 +89,11 @@ const NavLink = styled.a`
   font-weight: ${WEIGHTS.medium};
   font-size: ${18 / 16}rem;
   line-height: ${21 / 16}rem;;
-  color: ${COLORS.gray["900"]};
+  color: var(--color-gray-900);
   text-transform: uppercase;
     
   :first-of-type {
-    color: ${COLORS.secondary};
+    color: var(--color-secondary);
   }
 `
 
@@ -113,7 +113,7 @@ const FooterLink = styled.a`
   font-size: ${14 / 16}rem;
   line-height: ${16 / 16}rem;
     
-  color: ${COLORS.gray["700"]};
+  color: var(--color-gray-700);
 `
 
 
