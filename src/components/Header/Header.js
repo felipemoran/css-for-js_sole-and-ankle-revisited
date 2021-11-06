@@ -94,12 +94,11 @@ const MainHeader = styled.div`
 
 const DesktopNav = styled.nav`
   display: flex;
-  gap: 48px;
-  //margin: 0px 48px;
+  gap: clamp(1rem, 9.15vw - 4.4rem, 3rem);
   
-  @media ${QUERIES.tabletAndSmaller} {
-      display: none;
-  }
+   @media ${QUERIES.tabletAndSmaller} {
+       display: none;
+   }
 `;
 
 const MobileActions = styled.div`
