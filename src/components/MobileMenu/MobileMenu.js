@@ -63,9 +63,13 @@ const Content = styled(DialogContent)`
 const CloseButton = styled(UnstyledButton)`
     position: absolute;
     top: 10px;
-    right: 0;
+    right: 16px;
     padding: 16px;
     color: ${COLORS.gray["900"]};
+    
+    @media ${QUERIES.phoneAndSmaller} {
+      right: 0;
+    }
 `
 
 const Filler = styled.div`
